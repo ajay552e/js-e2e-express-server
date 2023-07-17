@@ -15,6 +15,7 @@ const create = async () => {
 
     // root route - serve static file
     app.get('/api/hello', (req, res) => {
+        console.log("hello world");
         res.json({hello: 'goodbye'});
         res.end();
     });
